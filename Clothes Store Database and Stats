@@ -1,0 +1,24 @@
+CREATE TABLE miastore (id INTEGER PRIMARY KEY, name text, price INTEGER, instock INTEGER, salesgoal INTEGER);
+
+INSERT INTO miastore VALUES (1, "tshirt", 5, 10, 10);
+INSERT INTO miastore VALUES (2, "pants", 10, 5, 5);
+INSERT INTO miastore VALUES (3, "dresses", 2, 6, 5);
+INSERT INTO miastore VALUES (4, "shorts", 5, 7, 7);
+INSERT INTO miastore VALUES (5, "earrings", 2, 10, 10);
+INSERT INTO miastore VALUES (6, "heels", 8, 3, 3);
+INSERT INTO miastore VALUES (7, "flats", 8, 5, 4);
+INSERT INTO miastore VALUES (8, "prom dresses", 24, 10, 9);
+INSERT INTO miastore VALUES (9, "baby clothes", 2, 15, 15);
+INSERT INTO miastore VALUES (10, "mens shirts", 5, 8, 7);
+INSERT INTO miastore VALUES (11, "mens pants", 6, 6, 5);
+INSERT INTO miastore VALUES (12, "toddler shoes", 3, 4, 4);
+INSERT INTO miastore VALUES (13, "tennis shoes", 20, 2, 1);
+INSERT INTO miastore VALUES (14, "skirts", 5, 6, 4);
+INSERT INTO miastore VALUES (15, "purses", 25, 7, 3);
+
+
+-- display the database ordered by price.
+SELECT * FROM (miastore) ORDER BY price DESC;
+
+-- what is the avg price of the store?
+SELECT AVG(price) FROM miastore;
